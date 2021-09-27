@@ -51,14 +51,14 @@
 				}
 
 				$.ajax({
-					context: $('#result'),	// равен $(this) внутри callback-функций
 					type: "POST",
-					url: "/upload.php",
+					url: $form.attr('action'),
 					data: formData,
 					dataType : 'json',   // xml, html, script, jsonp, text 	// если ответ сервера не соответствует типу, будет error
 					processData: false,	 // не преобразовывать объект в соответствии с Content-type: application/x-www-form-urlencoded
 					contentType: false,	 // будет ли jQuery устанавливать заголовок Content-type?
 					cache: false,
+					context: $('#result'),	// равен $(this) внутри callback-функций
 					// success: function(data, textStatus, jqXHR){	 // вызовется, если серверный скрипт вернет 200 (проверять в Network)
 					// 	console.log("success");
 					// 	if (data.error == ''){

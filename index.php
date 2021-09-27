@@ -13,7 +13,7 @@
 	<div class="container">
 		<div class="col-xs-10">
 			<h1 class="header">Форма</h1>
-			<form class="form-horizontal" role="form">
+			<form class="form-horizontal" action="upload.php" role="form">
 				<div class="form-group">
 					<label for="inputName" class="col-xs-2 control-label">Имя</label>
 					<div class="col-xs-10">
